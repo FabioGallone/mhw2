@@ -1,0 +1,137 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+section.question-name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.choice-grid{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+.choice-grid div{
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    width: calc(32.5% - 20px);
+    margin-bottom: 20px;
+ 
+}
+
+section img{
+    margin-top: 0px;
+    width: 100%;
+
+}
+
+.choice-grid img.checkbox{
+    margin-bottom: 0px;
+    display: block;
+}
+
+
+@media(max-width: 700px){
+
+  
+    article{
+        width: 95%;
+    }
+
+    header div span{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    
+
+}
+
+@media(max-width: 500px){
+
+    
+    .choice-grid div{
+        width: calc(49% - 20px);
+    }
+
+    section.question-name h1{
+        font-size: 2rem;
+    }
+
+    
+
+
+    
+}
+
+.choice-grid div .selected{
+    background-color: #cfe3ff;
+}
+
+.unselected{
+    opacity: 0.6;
+}
+
+.selected{
+    background-color: #cfe3ff !important; /*aggiungo priorità perché gli do più specificità;*/
+    opacity: 1.0;
+}
+
+#results.hidden{
+    display: none;
+}
+
+#results{
+    margin-top: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+#results h1{
+
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+}
+
+#results p{
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    
+
+}
+
+.button{
+    background-color: #cecece;
+    
+}
+
+a.button:hover{
+    background-color: #e0e0e0;
+}
+
+#results a {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+
+}
+
+
+
+
+
