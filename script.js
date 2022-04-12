@@ -11,6 +11,8 @@ const image = selected.querySelector(".checkbox");
 
 const area_selezione = document.querySelectorAll(".choice-grid div");
 
+
+
 for(const box of area_selezione){
     if(box.dataset.questionId === selected.dataset.questionId){
         const image = box.querySelector(".checkbox"); 
@@ -33,7 +35,6 @@ for(const box of area_selezione){
 
       
     }
-    
 }
 risposteprese[selected.dataset.questionId]=selected.dataset.choiceId;
 
@@ -54,7 +55,7 @@ if(GameOver()){
 
 function GameOver(){
 
-    if(risposteprese["one"]!==undefined && risposteprese["two"]!==undefined && risposteprese["three"]!=undefined){
+    if(Object.keys(risposteprese).length==3){
     return true;
     }
 
@@ -78,7 +79,7 @@ function RimuoviScelta(){
 }
 
 function RicominciaQuiz(){
-    InizializzaVettore();
+    ResettaObject();
         
     
     const area_selezione = document.querySelectorAll(".choice-grid div");
@@ -101,10 +102,8 @@ function RicominciaQuiz(){
 
 }
 
-function InizializzaVettore(){
-    risposteprese["one"]=undefined;
-    risposteprese["two"]=undefined;
-    risposteprese["three"]=undefined;
+function ResettaObject(){
+    risposteprese = {};
 }
 
 function DefinisciPersonalita(){
@@ -144,7 +143,7 @@ function stampaPersonalita(numero){
 
 
 const selected= document.querySelectorAll(".choice-grid div")
-const risposteprese = {};
+let risposteprese = {};
 
 
 
