@@ -68,10 +68,6 @@ section img{
         font-size: 2rem;
     }
 
-    
-
-
-    
 }
 
 .choice-grid div .selected{
@@ -113,25 +109,15 @@ section img{
 
 }
 
-.button{
-    background-color: #cecece;
-    
-}
-
-a.button:hover{
+#results button:hover{
     background-color: #e0e0e0;
 }
 
-#results a {
-    display: flex;
+#results button{
     cursor: pointer;
-    justify-content: space-around;
+    background-color: #cecece;
     height: 50px;
-    align-items: center;
+    width: 100%;
+ 
 
 }
-
-
-
-
-
