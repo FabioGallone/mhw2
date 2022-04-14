@@ -1,7 +1,5 @@
 /* TODO: inserite il codice JavaScript necessario a completare il MHW! */
 
-
-
 function ChooseImage(event) {
 
 const selected = event.currentTarget;
@@ -147,7 +145,7 @@ let risposteprese = {};
 
 
 
-const reset = document.querySelector(".button");
+const reset = document.querySelector("#results button");
 reset.addEventListener("click", RicominciaQuiz);
 
 
